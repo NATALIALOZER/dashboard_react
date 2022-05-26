@@ -32,6 +32,36 @@ body {
   background: var(--glass);
   border-radius: 2rem;
   gap: 16px;
-  grid-template-columns: 14.2rem auto 20rem;
+  grid-template-columns: 20rem auto 25rem;
   overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #5b5e666f; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5b5e66ac; 
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass{
+    grid-template-columns: 1fr;
+  } 
 }

@@ -1,17 +1,19 @@
-// Sidebar imports
 import {
     UilEstate,
     UilClipboardAlt,
     UilUsersAlt,
     UilPackage,
     UilChart,
-    UilSignOutAlt,
     UilUsdSquare,
     UilMoneyWithdrawal
   } from "@iconscout/react-unicons";
+
+  import img1 from "../imgs/img1.png";
+  import img2 from "../imgs/img2.png";
+  import img3 from "../imgs/img3.png";
   
 
-// Sidebar Data
+
 export const SidebarData = [
     {
       icon: UilEstate,
@@ -35,7 +37,7 @@ export const SidebarData = [
     },
   ];
 
-// Analytics Cards Data
+
 export const CardsData = [
   {
     title: "Sales",
@@ -88,7 +90,7 @@ export const CardsData = [
   },
 ];
 
-// Expanded chart dat
+
 export const chartData = {
   options: {
     chart: {
@@ -137,5 +139,80 @@ export const chartData = {
         "2018-09-19T06:30:00.000Z",
       ],
     },
+  },
+};
+
+
+export const UpdatesData = [
+  {
+    img: img1,
+    name: "Andrew Thomas",
+    noti: "has ordered Apple smart watch 2500mh battery.",
+    time: "25 seconds ago",
+  },
+  {
+    img: img2,
+    name: "James Bond",
+    noti: "has received Samsung gadget for charging battery.",
+    time: "30 minutes ago",
+  },
+  {
+    img: img3,
+    name: "Iron Man",
+    noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
+    time: "2 hours ago",
+  },
+];
+
+export const customerChartData = {
+  series: [
+    {
+      name: "Review",
+      data: [10, 50, 30, 90, 40, 120, 100],
+    },
+  ],
+  options: {
+    chart: {
+      type: "area",
+      height: "auto",
+    },
+
+    fill: {
+      colors: ["#fff"],
+      type: "gradient",
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+      colors: ["#ff929f"],
+    },
+    tooltip: {
+      x: {
+        format: "dd/MM/yy HH:mm",
+      },
+    },
+    grid: {
+      show: false,
+    },
+    xaxis: {
+      type: "datetime",
+      categories: [
+        "2018-09-19T00:00:00.000Z",
+        "2018-09-19T01:30:00.000Z",
+        "2018-09-19T02:30:00.000Z",
+        "2018-09-19T03:30:00.000Z",
+        "2018-09-19T04:30:00.000Z",
+        "2018-09-19T05:30:00.000Z",
+        "2018-09-19T06:30:00.000Z",
+      ],
+    },
+    yaxis: {
+      show: false
+    },
+    toolbar:{
+      show: false
+    }
   },
 };
