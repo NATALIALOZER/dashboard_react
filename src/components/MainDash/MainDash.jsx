@@ -1,16 +1,33 @@
 import React from "react";
-import Table from "../Table/Table"
+import Table from "../Table/Table";
 import Cards from "../Cards/Cards";
-import './MainDash.css'
+import "./MainDash.css";
+import Blog from "../Blog/Blog";
 
-const MainDash = () => {
-    return (
-        <div className="MainDash">
+const MainDash = (props) => {
+  const project = () => {
+    console.log(props.currentTab);
+    switch (props.currentTab) {
+      case 1:
+        return (
+          <div className="Blog">
+            <h1>Blog</h1>
+            <Blog />
+          </div>
+        );
+
+      default:
+        return (
+          <div className="Dashboard">
             <h1>Dashboard</h1>
-            <Cards/>
-            <Table/>
-        </div>
-    )
-}
+            <Cards />
+            <Table />
+          </div>
+        );
+    }
+  };
 
-export default MainDash
+  return <div className="MainDash">{project()}</div>;
+};
+
+export default MainDash;

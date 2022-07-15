@@ -1,0 +1,78 @@
+.BlogLayout {
+  display: flex;
+  justify-content: space-between;
+  border: 2px dotted gainsboro;
+  border-radius: 25px;
+  width: 100%;
+  max-height: calc(100% - 40px);
+}
+
+.BlogLeftSide {
+  flex: 6;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.BlogRightSide {
+  flex: 1;
+  flex-direction: column;
+}
+
+.BlogLeftSide,
+.BlogRightSide {
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+.BlogLeftSide .item {
+  width: calc(100% - 2rem);
+  background: rgba(25, 25, 25, 0.3);
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 1rem 0;
+  color: white;
+}
+
+.BlogRightSide button {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background: rgba(25, 25, 25, 0.3);
+  border-radius: 25px;
+  color: white;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  color: lightskyblue;
+  background: rgba(25, 25, 25, 0.548);
+}
+
+.delete-button:hover {
+  color: red;
+  background: rgba(25, 25, 25, 0.548);
+}
+
+.edit-button:hover {
+  color: aquamarine;
+  background: rgba(25, 25, 25, 0.548);
+}
+
+/* 
+@media screen and (max-width: 1200px) {
+    .BlogLayout{
+        justify-content:flex-start;
+        margin-top: 4rem;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .BlogLayout{
+        margin-top: 2rem;
+        align-items: center;
+    }
+} */
