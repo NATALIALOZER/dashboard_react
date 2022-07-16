@@ -5,8 +5,7 @@ import "./MainDash.css";
 import Blog from "../Blog/Blog";
 
 const MainDash = (props) => {
-  const project = () => {
-    console.log(props.currentTab);
+  const switchDash = () => {
     switch (props.currentTab) {
       case 1:
         return (
@@ -27,7 +26,7 @@ const MainDash = (props) => {
     }
   };
 
-  return <div className="MainDash">{project()}</div>;
+  return <div className="MainDash">{switchDash()}</div>;
 };
 
 export default MainDash;

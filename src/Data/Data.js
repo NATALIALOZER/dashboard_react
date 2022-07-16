@@ -6,7 +6,6 @@ import {
   UilChart,
   UilUsdSquare,
   UilMoneyWithdrawal,
-  UiDelete,
 } from "@iconscout/react-unicons";
 
 import img1 from "../imgs/img1.png";
@@ -212,3 +211,12 @@ export const customerChartData = {
     },
   },
 };
+
+export const NotesData = [
+  {
+    id: 1,
+    author: "Andrew Thomas",
+    text: "Styling in React: 4 ways to style a React app https://blog.logrocket.com/styling-in-react-4-ways-style-react-app/",
+    date: "SATURDAY 16 July 2022",
+  },
+];

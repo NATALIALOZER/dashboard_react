@@ -27,10 +27,13 @@
 .BlogLeftSide .item {
   width: calc(100% - 2rem);
   background: rgba(25, 25, 25, 0.3);
-  border-radius: 25px;
+  border-radius: 0.7rem;
   padding: 1rem;
   margin: 1rem 0;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .BlogRightSide button {
@@ -38,10 +41,10 @@
   height: auto;
   padding: 1rem;
   background: rgba(25, 25, 25, 0.3);
-  border-radius: 25px;
+  border-radius: 0.7rem;
   color: white;
   border: none;
-  margin: 1rem 0;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -58,6 +61,10 @@
 .edit-button:hover {
   color: aquamarine;
   background: rgba(25, 25, 25, 0.548);
+}
+
+.delete-mode:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* 
