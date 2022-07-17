@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./Blog.css";
-import { UilCancel, UilEditAlt, Uil10Plus } from "@iconscout/react-unicons";
+import {
+  UilCancel,
+  UilEditAlt,
+  UilFocusAdd,
+  UilBan,
+} from "@iconscout/react-unicons";
 import { NotesData } from "../../Data/Data";
 import CreateEditDialog from "../CreateEditDialog/CreateEditDialog";
 import { Button } from "@mui/material";
@@ -48,7 +53,10 @@ const Blog = () => {
               key={index}
               id={item.id}
             >
-              <div>{item.text}</div>
+              <div>
+                <div>{item.text}</div>
+                <div className="item-date">{item.date}</div>
+              </div>
               <div className="delete-checkbox">{setDeleteButtons()}</div>
             </div>
           );
@@ -57,10 +65,10 @@ const Blog = () => {
 
       <div className="BlogRightSide">
         <button className="add-button" onClick={handleClickOpen}>
-          <Uil10Plus></Uil10Plus>
+          <UilFocusAdd></UilFocusAdd>
         </button>
         <button className="delete-button" onClick={onDelete}>
-          <UilCancel></UilCancel>
+          <UilBan></UilBan>
         </button>
         <button className="edit-button">
           <UilEditAlt></UilEditAlt>

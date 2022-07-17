@@ -215,8 +215,14 @@ export const customerChartData = {
 export const NotesData = [
   {
     id: 1,
-    author: "Andrew Thomas",
+    author: "Nataliia Balabukha",
     text: "Styling in React: 4 ways to style a React app https://blog.logrocket.com/styling-in-react-4-ways-style-react-app/",
     date: "SATURDAY 16 July 2022",
+  },
+  {
+    id: 2,
+    author: "Nataliia Balabukha",
+    text: "Робота з станами в Ангуляр. Збереженння стану за допомогою сервісу. /n import { Injectable } from '@angular/core'; @Injectable({ providedIn: 'root' }) export class StorageService { private dataSubject: BehaviorSubject<string> = new BehaviorSubject('initial value') data$: Observable<string> = this.dataSubject.asObservable()  setData(newValue: string) { this.dataSubject.next(newValue)}}  /n https://habr.com/ru/company/custis/blog/516290/ , https://habr.com/ru/post/439104/",
+    date: "SUNDAY 17 July 2022",
   },
 ];
