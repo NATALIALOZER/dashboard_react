@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Logo from "../../imgs/logo.png";
-import "./Sidebar.css";
-
-import { SidebarData } from "../../Data/Data";
+import Logo from "../../../../imgs/logo.png";
+import "./LeftSidebar.css";
+import { LeftSidebarData } from "../../../../Data/Data";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
+import { NavLink } from "react-router-dom";
 
-const Sidebar = (props) => {
+const LeftSidebar = (props) => {
   const [selected, setSelected] = useState(0);
 
   function onChangeTab(index) {
+    console.log(index);
     setSelected(index);
     props.handleTabSwich(index);
   }
@@ -22,7 +23,7 @@ const Sidebar = (props) => {
         </span>
       </div>
       <div className="menu">
-        {SidebarData.map((item, index) => {
+        {LeftSidebarData.map((item, index) => {
           return (
             <div
               className={selected === index ? "menuItem active" : "menuItem"}
@@ -36,11 +37,13 @@ const Sidebar = (props) => {
         })}
 
         <div className="menuItem">
-          <UilSignOutAlt />
+          <NavLink to="/login">
+            <UilSignOutAlt />
+          </NavLink>
         </div>
       </div>
     </div>
   );
 };
 
-export default Sidebar;
+export default LeftSidebar;

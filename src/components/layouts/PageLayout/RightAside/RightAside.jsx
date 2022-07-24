@@ -1,6 +1,6 @@
 import React from "react";
-import CustomerReview from "../CustomerReview/CustomerReview";
-import Updates from "../Updates/Updates";
+import CustomerReview from "../../../parts/CustomerReview/CustomerReview";
+import Updates from "../../../parts/Updates/Updates";
 import "./RightAside.css";
 
 const RightAside = () => {

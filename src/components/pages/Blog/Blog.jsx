@@ -6,8 +6,8 @@ import {
   UilFocusAdd,
   UilBan,
 } from "@iconscout/react-unicons";
-import { NotesData } from "../../Data/Data";
-import CreateEditDialog from "../CreateEditDialog/CreateEditDialog";
+import { NotesData } from "../../../Data/Data";
+import CreateEditDialog from "../../parts/CreateEditDialog/CreateEditDialog";
 import { Button } from "@mui/material";
 
 const Blog = () => {

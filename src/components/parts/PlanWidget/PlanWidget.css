@@ -1,0 +1,33 @@
+.TaskList {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 5em;
+}
+.Task {
+  display: flex;
+  height: 100%;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin: 0.5rem;
+}
+.Task:hover {
+  box-shadow: none !important;
+}
+
+.first {
+  background-color: var(--orange);
+  flex: 9;
+}
+.second {
+  background-color: var(--pink);
+  opacity: 0.5;
+  flex: 5;
+}
+.third {
+  background-color: var(--pink);
+  opacity: 0.1;
+  flex: 1;
+}

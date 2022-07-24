@@ -4,9 +4,8 @@ import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-// import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import { NotesData } from "../../Data/Data";
+import { NotesData } from "../../../Data/Data";
 
 const CreateEditDialog = ({ open, handleClose }) => {
   const valueRef = useRef("");
@@ -55,7 +54,6 @@ const CreateEditDialog = ({ open, handleClose }) => {
             width: "540px",
             height: "120px",
             "& .MuiFormLabel-root": { color: "aquamarine" },
-            // "& .Mui-focused": { color: "aquamarine" },
             "& .MuiInputBase-root": { color: "white" },
             "& .MuiInput-root:after": { borderBottom: "none" },
           }}

@@ -15,19 +15,19 @@ body {
   margin: 0;
 }
 
-::-webkit-scrollbar {
-  width: 16px;
+.Auth {
+  background-color: #242d34;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #5b5e666f;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #5b5e66ac;
+.auth-block {
+  width: 50%;
+  background-color: black;
+  border-radius: 15px;
+  color: white;
+  padding: 1em;
 }

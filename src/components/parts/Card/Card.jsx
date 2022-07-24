@@ -5,7 +5,7 @@ import "react-circular-progressbar/dist/styles.css";
 import { motion, AnimateSharedLayout } from "framer-motion";
 import { UilTimes } from "@iconscout/react-unicons";
 import Chart from "react-apexcharts";
-import { chartData } from "../../Data/Data";
+import { chartData } from "../../../Data/Data";
 
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);

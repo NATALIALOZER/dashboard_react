@@ -1,0 +1,38 @@
+.Page {
+  background: rgb(193, 191, 199);
+  background: linear-gradient(
+    -106deg,
+    rgba(193, 191, 199, 0.4911006638983718) 0%,
+    rgba(186, 238, 167, 1) 58%,
+    rgba(137, 212, 176, 0.7235936610972514) 100%
+  );
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PageGlass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  background: var(--glass);
+  border-radius: 2rem;
+  gap: 16px;
+  grid-template-columns: 20% 55% auto;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .PageGlass {
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .PageGlass {
+    grid-template-columns: 1fr;
+  }
+}
