@@ -19,7 +19,7 @@ root.render(
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NoPage />} /> */}
           </Route>
-          <Route path="/login" element={<Auth />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </BrowserRouter>
     </Provider>

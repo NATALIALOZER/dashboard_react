@@ -37,7 +37,7 @@ const LeftSidebar = (props) => {
         })}
 
         <div className="menuItem">
-          <NavLink to="/login">
+          <NavLink to="/auth">
             <UilSignOutAlt />
           </NavLink>
         </div>
